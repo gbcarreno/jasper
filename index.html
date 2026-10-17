@@ -16,44 +16,106 @@
       color: #ffffff;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+    }
+
+    /* BARRA DE NAVEGACIÓN SUPERIOR */
+    header {
+      background-color: #0d0d0d;
+      border-bottom: 1px solid #222222;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
       align-items: center;
-      text-align: center;
+      width: 100%;
     }
-    .container {
-      padding: 20px;
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
     }
-    h1 {
-      font-size: 3.5rem;
-      font-weight: 700;
-      letter-spacing: -0.03em;
-      margin-bottom: 0.5rem;
-    }
-    p.subtitle {
+
+    .brand h1 {
       font-size: 1.25rem;
-      color: #aaaaaa;
-      font-weight: 400;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      margin-bottom: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #ffffff;
     }
-    .badge {
-      display: inline-block;
-      padding: 6px 16px;
-      border: 1px solid #333333;
-      border-radius: 20px;
+
+    .brand span.tagline {
       font-size: 0.85rem;
-      color: #888888;
-      letter-spacing: 0.1em;
+      color: #777777;
+      border-left: 1px solid #333333;
+      padding-left: 0.8rem;
       text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.8rem;
+      align-items: center;
+    }
+
+    nav a {
+      color: #aaaaaa;
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    nav a.active {
+      color: #ffffff;
+      font-weight: 600;
+      border-bottom: 2px solid #00e676;
+      padding-bottom: 4px;
+    }
+
+    nav .disabled {
+      color: #444444;
+      cursor: not-allowed;
+      font-size: 0.9rem;
+    }
+
+    nav .disabled::after {
+      content: " (Pronto)";
+      font-size: 0.7rem;
+      color: #555555;
+    }
+
+    main {
+      flex: 1;
+      width: 100%;
+      height: 100%;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Tercera Fuente</h1>
-    <p class="subtitle">Atlas socioambiental</p>
-    <span class="badge">Pronto</span>
-  </div>
+
+  <!-- BARRA DE NAVEGACIÓN -->
+  <header>
+    <div class="brand">
+      <h1>Tercera Fuente</h1>
+      <span class="tagline">Atlas Socioambiental</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Atlas</a></li>
+        <li><span class="disabled">Rutas Temáticas</span></li>
+        <li><span class="disabled">Archivo</span></li>
+        <li><a href="acerca.html">Acerca del Proyecto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main></main>
+
 </body>
 </html>
