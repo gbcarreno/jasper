@@ -13,13 +13,12 @@
     body, html {
       background-color: #000000;
       color: #ffffff;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       min-height: 100%;
       display: flex;
       flex-direction: column;
     }
 
-    /* BARRA DE NAVEGACIÓN SUPERIOR */
+    /* BARRA DE NAVEGACIÓN (Sans-serif) */
     header {
       background-color: #0d0d0d;
       border-bottom: 1px solid #222222;
@@ -28,6 +27,7 @@
       justify-content: space-between;
       align-items: center;
       width: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     }
 
     .brand {
@@ -36,7 +36,9 @@
       gap: 0.8rem;
     }
 
+    /* Logotipo: Monospace (Courier) */
     .brand h1 {
+      font-family: "Courier New", Courier, monospace;
       font-size: 1.25rem;
       font-weight: 700;
       letter-spacing: -0.02em;
@@ -44,6 +46,7 @@
     }
 
     .brand span.tagline {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       font-size: 0.85rem;
       color: #777777;
       border-left: 1px solid #333333;
@@ -90,23 +93,36 @@
       color: #555555;
     }
 
-    /* CONTENIDO DE ACERCA DEL PROYECTO */
+    /* CONTENIDO EDITORIAL */
     main {
       flex: 1;
       max-width: 720px;
       margin: 3.5rem auto;
       padding: 0 1.5rem;
-      line-height: 1.7;
+      line-height: 1.8;
+    }
+
+    /* Encabezados (h1, h2, h3): Courier New / monospace */
+    h1, h2, h3, h4 {
+      font-family: "Courier New", Courier, monospace;
+      letter-spacing: -0.02em;
     }
 
     h2 {
-      font-size: 2.2rem;
+      font-size: 2rem;
       font-weight: 700;
-      letter-spacing: -0.02em;
       color: #ffffff;
       margin-bottom: 1.5rem;
       border-bottom: 1px solid #222222;
       padding-bottom: 0.8rem;
+    }
+
+    /* Cuerpo de texto y párrafos: Georgia / Serif */
+    p {
+      font-family: Georgia, "Times New Roman", serif;
+      color: #dddddd;
+      font-size: 1.05rem;
+      margin-bottom: 1.4rem;
     }
   </style>
 </head>
@@ -128,12 +144,15 @@
     </nav>
   </header>
 
-  <!-- AQUÍ PUEDES ESCRIBIR EL TEXTO QUE PREFIERAS -->
+  <!-- MANIFIESTO DEL PROYECTO -->
   <main>
-    <h2>Acerca del Proyecto</h2>
+    <h2>Acerca de TTERCERA FUENTE</h2>
     
-    <!-- Agrega aquí tus párrafos o secciones -->
+    <p>Tercera Fuente es un atlas y explorador cartográfico enfocado en rastrear las tensiones por el territorio, la defensa de los bienes comunes y las respuestas comunitarias frente al impacto de industrias extractivas, proyectos de infraestructura y dinámicas de represión estatal a nivel global. Nuestra finalidad es transformar los datos espaciales y cuantitativos en relato humano, convirtiendo el mapa en la puerta de entrada a un archivo vivo alimentado por testimonios, fotografía histórica, investigaciones independientes y memoria colectiva.</p>
 
+    <p>Situamos la mirada en el territorio ancestral, la mina, la cuenca hidrográfica o la calle donde se desarrollan los conflictos y germinan las resistencias. A través de este recorrido visual, conectamos las crisis socioambientales del presente con los procesos históricos y las luchas del siglo XX que explican el mapa actual.</p>
+
+    <p>Construimos una herramienta accesible e intuitiva para democratizar la información sobre estos hechos. Buscamos que el conocimiento sobre los bienes comunes y la memoria histórica deje de estar disperso o atrapado en formatos inaccesibles, poniéndolo al servicio del ciudadano común, estudiantes y comunidades que desean comprender qué se está disputando en el mundo o en su propio territorio.</p>
   </main>
 
 </body>
