@@ -120,6 +120,29 @@
   </header>
 
   <main></main>
+<!-- PIE DE PÁGINA (FOOTER) -->
+  <footer>
+    <div class="footer-container">
+      
+      <div class="footer-brand">
+        <span class="footer-title">Tercera Fuente</span>
+        <span class="footer-desc">Atlas socioambiental e interactivo.</span>
+      </div>
 
+      <div class="footer-meta">
+        <p>Infraestructura en <a href="https://pages.github.com/" target="_blank">GitHub Pages</a> · Cartografía con herramientas de código abierto.</p>
+        <p>Información bajo licencia <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">CC BY-SA 4.0</a>.</p>
+      </div>
+
+      <div class="footer-copy">
+        <span>© <span id="year"></span> Tercera Fuente</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
