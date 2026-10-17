@@ -5,15 +5,12 @@ paginate: 5
 language: 'es'
 
 # Website info
-name: 'Tercerafuente'
-description: 'Atlas socioambiental en Latinoamérica'
+name: 'Tercera Fuente'
+description: 'Atlas socioambiental'
 
 short_url: 'www.tercerafuente.org'
 google_analytics: ''
 disqus: ''
-
-# IMPORTANTE: Al usar dominio propio personalizado (tercerafuente.org), 
-# baseurl DEBE ser una cadena vacía o '/' en lugar de '/jasper/'
 baseurl: ''
 
 # Permalinks
@@ -40,5 +37,3 @@ exclude:
   - .travis.yml
   - node_modules
   - .git
-
-  
