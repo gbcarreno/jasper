@@ -117,6 +117,13 @@
       padding-bottom: 0.8rem;
     }
 
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #00e676;
+      margin: 2.5rem 0 1rem 0;
+    }
+
     /* Cuerpo de texto y párrafos: Georgia / Serif */
     p {
       font-family: Georgia, "Times New Roman", serif;
@@ -125,7 +132,50 @@
       margin-bottom: 1.4rem;
       text-align: justify;
     }
-/* ESTILOS DEL PIE DE PÁGINA (100% COURIER) */
+
+    /* SECCIONES Y LISTA DE CANALES */
+    .independencia-section, .contacto-section {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px dashed #222222;
+    }
+
+    .canales-lista {
+      list-style: none !important;
+      margin-left: 0 !important;
+      margin-top: 1.2rem;
+    }
+
+    .canales-lista li {
+      font-family: Georgia, "Times New Roman", serif;
+      margin-bottom: 1.2rem;
+      line-height: 1.6;
+    }
+
+    .canales-lista strong {
+      color: #ffffff;
+    }
+
+    .canales-lista a {
+      font-family: "Courier New", Courier, monospace;
+      color: #00e676;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      font-weight: 600;
+    }
+
+    .canales-lista a:hover {
+      color: #ffffff;
+    }
+
+    .canal-desc {
+      display: block;
+      font-size: 0.9rem;
+      color: #888888;
+      margin-top: 0.2rem;
+    }
+
+    /* ESTILOS DEL PIE DE PÁGINA (100% COURIER) */
     footer {
       background-color: #0d0d0d;
       border-top: 1px solid #222222;
@@ -212,15 +262,15 @@
     </div>
     <nav>
       <ul>
-        <li><a href="index.html">Atlas</a></li>
+        <li><a href="index.html">Explorar</a></li>
         <li><span class="disabled">Rutas</span></li>
         <li><span class="disabled">Archivo</span></li>
-        <li><a href="acerca.html" class="active">Sobre el proyecto</a></li>
+        <li><a href="acerca.html" class="active">El Proyecto</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- MANIFIESTO DEL PROYECTO -->
+  <!-- MANIFIESTO Y SOBRE EL PROYECTO -->
   <main>
     <h2>TERCERA FUENTE</h2>
     
@@ -229,8 +279,41 @@
     <p>Situamos la mirada en el territorio ancestral, la mina, la cuenca hidrográfica o la calle donde se desarrollan los conflictos y germinan las resistencias. A través de este recorrido visual, conectamos las crisis socioambientales del presente con los procesos históricos y las luchas del siglo XX que explican el mapa actual.</p>
 
     <p>Construimos una herramienta accesible e intuitiva para democratizar la información sobre estos hechos. Buscamos que el conocimiento sobre los bienes comunes y la memoria histórica deje de estar disperso o atrapado en formatos inaccesibles, poniéndolo al servicio del ciudadano común, estudiantes y comunidades que desean comprender qué se está disputando en el mundo o en su propio territorio.</p>
+
+    <!-- NATURALEZA E INDEPENDENCIA -->
+    <section class="independencia-section">
+      <h3>Naturaleza e Independencia</h3>
+      <p>Tercera Fuente es una iniciativa personal e independiente, sin fines de lucro, impulsada por el interés genuino en documentar, analizar y visibilizar las dinámicas socioambientales y las disputas territoriales.</p>
+      <p>El proyecto no responde a agendas corporativas, gubernamentales ni partidistas. Se sostiene de manera autónoma con el objetivo de construir una herramienta pedagógica y cartográfica de acceso abierto para la ciudadanía, investigadores y comunidades.</p>
+    </section>
+
+    <!-- PUBLICACIONES Y CANALES DE DIFUSIÓN -->
+    <section class="contacto-section">
+      <h3>Publicaciones y Contacto</h3>
+      <p>Para profundizar en las investigaciones, seguir el avance de las publicaciones o comunicarte con el proyecto:</p>
+      
+      <ul class="canales-lista">
+        <li>
+          <strong>Bitácora & Ensayos:</strong> 
+          <a href="https://tercerafuente.substack.com/" target="_blank" rel="noopener">tercerafuente.substack.com</a>
+          <span class="canal-desc">— Artículos en profundidad, lecturas largas y análisis del atlas.</span>
+        </li>
+        <li>
+          <strong>Difusión Visual:</strong> 
+          <a href="https://www.instagram.com/tercerafuente/" target="_blank" rel="noopener">@tercerafuente</a>
+          <span class="canal-desc">— Registros, mapas, fichas de casos y novedades.</span>
+        </li>
+        <li>
+          <strong>Buzón de Fuentes y Correo:</strong> 
+          <a href="mailto:gbcarreno@proton.me">gbcarreno@proton.me</a>
+          <span class="canal-desc">— Para envío seguro de documentación, sugerencias o consultas.</span>
+        </li>
+      </ul>
+    </section>
+
   </main>
-<!-- PIE DE PÁGINA (FOOTER) -->
+
+  <!-- PIE DE PÁGINA (FOOTER) -->
   <footer>
     <div class="footer-container">
       
