@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acerca del Proyecto — Tercera Fuente</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body, html {
+      background-color: #000000;
+      color: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* BARRA DE NAVEGACIÓN SUPERIOR */
+    header {
+      background-color: #0d0d0d;
+      border-bottom: 1px solid #222222;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .brand h1 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+    }
+
+    .brand span.tagline {
+      font-size: 0.85rem;
+      color: #777777;
+      border-left: 1px solid #333333;
+      padding-left: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.8rem;
+      align-items: center;
+    }
+
+    nav a {
+      color: #aaaaaa;
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    nav a.active {
+      color: #ffffff;
+      font-weight: 600;
+      border-bottom: 2px solid #00e676;
+      padding-bottom: 4px;
+    }
+
+    nav .disabled {
+      color: #444444;
+      cursor: not-allowed;
+      font-size: 0.9rem;
+    }
+
+    nav .disabled::after {
+      content: " (Pronto)";
+      font-size: 0.7rem;
+      color: #555555;
+    }
+
+    /* CONTENIDO DE ACERCA DEL PROYECTO */
+    main {
+      flex: 1;
+      max-width: 720px;
+      margin: 3.5rem auto;
+      padding: 0 1.5rem;
+      line-height: 1.7;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid #222222;
+      padding-bottom: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- BARRA DE NAVEGACIÓN -->
+  <header>
+    <div class="brand">
+      <h1>Tercera Fuente</h1>
+      <span class="tagline">Atlas socioambiental</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Atlas</a></li>
+        <li><span class="disabled">Rutas Temáticas</span></li>
+        <li><span class="disabled">Archivo</span></li>
+        <li><a href="acerca.html" class="active">Acerca del Proyecto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- AQUÍ PUEDES ESCRIBIR EL TEXTO QUE PREFIERAS -->
+  <main>
+    <h2>Acerca del Proyecto</h2>
+    
+    <!-- Agrega aquí tus párrafos o secciones -->
+
+  </main>
+
+</body>
+</html>
