@@ -1,6 +1,3 @@
----
-permalink: /sobre/
----
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -8,6 +5,32 @@ permalink: /sobre/
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>El Proyecto — Tercera Fuente</title>
   <style>
+    /* CARGA DE LA FUENTE LOCAL DESDE /fonts/ */
+    @font-face {
+      font-family: 'CourierPrimeCustom';
+      src: url('/fonts/CourierPrime-Regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'CourierPrimeCustom';
+      src: url('/fonts/CourierPrime-Bold.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'CourierPrimeCustom';
+      src: url('/fonts/CourierPrime-Italic.ttf') format('truetype');
+      font-weight: 400;
+      font-style: italic;
+    }
+    @font-face {
+      font-family: 'CourierPrimeCustom';
+      src: url('/fonts/CourierPrime-BoldItalic.ttf') format('truetype');
+      font-weight: 700;
+      font-style: italic;
+    }
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -39,9 +62,8 @@ permalink: /sobre/
       gap: 0.8rem;
     }
 
-    /* Logotipo: Monospace (Courier) */
     .brand h1 {
-      font-family: "Courier New", Courier, monospace;
+      font-family: 'CourierPrimeCustom', "Courier New", Courier, monospace;
       font-size: 1.25rem;
       font-weight: 700;
       letter-spacing: -0.02em;
@@ -113,9 +135,8 @@ permalink: /sobre/
       line-height: 1.8;
     }
 
-    /* Encabezados (h1, h2, h3): Courier New / monospace */
     h1, h2, h3, h4 {
-      font-family: "Courier New", Courier, monospace;
+      font-family: 'CourierPrimeCustom', "Courier New", Courier, monospace;
       letter-spacing: -0.02em;
     }
 
@@ -135,7 +156,6 @@ permalink: /sobre/
       margin: 2.5rem 0 1rem 0;
     }
 
-    /* Cuerpo de texto y párrafos: Georgia / Serif */
     p {
       font-family: Georgia, "Times New Roman", serif;
       color: #dddddd;
@@ -144,7 +164,6 @@ permalink: /sobre/
       text-align: justify;
     }
 
-    /* SECCIONES Y LISTA DE CANALES */
     .independencia-section, .contacto-section {
       margin-top: 2rem;
       padding-top: 1.5rem;
@@ -168,11 +187,12 @@ permalink: /sobre/
     }
 
     .canales-lista a {
-      font-family: "Courier New", Courier, monospace;
+      font-family: 'CourierPrimeCustom', "Courier New", Courier, monospace;
       color: #00e676;
       text-decoration: underline;
       text-underline-offset: 3px;
       font-weight: 600;
+      word-break: break-all;
     }
 
     .canales-lista a:hover {
@@ -193,7 +213,7 @@ permalink: /sobre/
       padding: 2.5rem 2rem 2rem;
       margin-top: auto;
       width: 100%;
-      font-family: "Courier New", Courier, monospace !important;
+      font-family: 'CourierPrimeCustom', "Courier New", Courier, monospace !important;
     }
 
     .footer-container {
@@ -207,7 +227,7 @@ permalink: /sobre/
     }
 
     .footer-title {
-      font-family: "Courier New", Courier, monospace;
+      font-family: 'CourierPrimeCustom', "Courier New", Courier, monospace;
       font-weight: 700;
       font-size: 1.1rem;
       color: #ffffff;
@@ -216,13 +236,13 @@ permalink: /sobre/
     }
 
     .footer-desc {
-      font-family: "Courier New", Courier, monospace;
+      font-family: 'CourierPrimeCustom', "Courier New", Courier, monospace;
       color: #888888;
       font-size: 0.85rem;
     }
 
     .footer-meta p {
-      font-family: "Courier New", Courier, monospace !important;
+      font-family: 'CourierPrimeCustom', "Courier New", Courier, monospace !important;
       font-size: 0.8rem !important;
       color: #888888 !important;
       margin-bottom: 0.4rem !important;
@@ -230,7 +250,7 @@ permalink: /sobre/
     }
 
     .footer-meta a {
-      font-family: "Courier New", Courier, monospace;
+      font-family: 'CourierPrimeCustom', "Courier New", Courier, monospace;
       color: #aaaaaa;
       text-decoration: underline;
       text-underline-offset: 3px;
@@ -242,12 +262,53 @@ permalink: /sobre/
     }
 
     .footer-copy {
-      font-family: "Courier New", Courier, monospace;
+      font-family: 'CourierPrimeCustom', "Courier New", Courier, monospace;
       font-size: 0.75rem;
       color: #555555;
       letter-spacing: 0.05em;
       text-transform: uppercase;
       margin-top: 0.5rem;
+    }
+
+    /* ADAPTABILIDAD MÓVIL (RESPONSIVE) */
+    @media (max-width: 640px) {
+      header.site-header {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+      }
+
+      .brand span.tagline {
+        display: none;
+      }
+
+      nav ul {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      nav a, nav .disabled {
+        font-size: 0.85rem;
+      }
+
+      main {
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+
+      h2 {
+        font-size: 1.6rem;
+      }
+
+      p {
+        font-size: 0.98rem;
+        text-align: left;
+      }
+
+      footer {
+        padding: 2rem 1rem;
+      }
     }
 
     @media (min-width: 768px) {
@@ -268,12 +329,13 @@ permalink: /sobre/
   <!-- BARRA DE NAVEGACIÓN -->
   <header class="site-header">
     <div class="brand">
-      <h1><a href="/">TERCERA FUENTE</a></h1>
+      <h1><a href="https://tercerafuente.org/">TERCERA FUENTE</a></h1>
       <span class="tagline">Atlas socioambiental</span>
     </div>
+
     <nav>
       <ul>
-        <li><a href="/">Explorar</a></li>
+        <li><a href="https://tercerafuente.org/">Explorar</a></li>
         <li><span class="disabled">Rutas</span></li>
         <li><span class="disabled">Archivo</span></li>
         <li><a href="/sobre/" class="active">Sobre el proyecto</a></li>
@@ -319,13 +381,11 @@ permalink: /sobre/
         </li>
       </ul>
     </section>
-
   </main>
 
   <!-- PIE DE PÁGINA (FOOTER) -->
   <footer>
     <div class="footer-container">
-      
       <div class="footer-brand">
         <span class="footer-title">Tercera Fuente</span>
         <span class="footer-desc">Atlas socioambiental e interactivo.</span>
@@ -339,7 +399,6 @@ permalink: /sobre/
       <div class="footer-copy">
         <span>© <span id="year"></span> Tercera Fuente</span>
       </div>
-
     </div>
   </footer>
 
