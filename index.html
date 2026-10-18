@@ -126,7 +126,7 @@
       color: #555555;
     }
 
-    /* BANNER TIPO TELEPROMPTER EN MEMORIA */
+    /* BANNER TIPO TELEPROMPTER OPTIMIZADO Y FLUIDO */
     .memorial-banner {
       background-color: #050505;
       border-bottom: 1px solid #222222;
@@ -138,8 +138,8 @@
       font-size: 0.85rem;
       color: #aaaaaa;
       display: flex;
-      align-items: center;
       position: relative;
+      width: 100%;
     }
 
     .memorial-banner::before,
@@ -164,10 +164,11 @@
     }
 
     .memorial-track {
-      display: inline-block;
+      display: flex;
+      flex-shrink: 0;
       white-space: nowrap;
       will-change: transform;
-      animation: teleprompter 40s linear infinite;
+      animation: teleprompter 22s linear infinite;
     }
 
     .memorial-banner:hover .memorial-track {
@@ -198,12 +199,13 @@
       font-size: 0.78rem;
     }
 
+    /* ANIMACIÓN CON ACELERACIÓN DE HARDWARE GPU */
     @keyframes teleprompter {
       0% {
-        transform: translateX(0%);
+        transform: translate3d(0, 0, 0);
       }
       100% {
-        transform: translateX(-50%);
+        transform: translate3d(-50%, 0, 0);
       }
     }
 
@@ -292,7 +294,7 @@
       }
 
       .brand span.tagline {
-        display: none; /* Ocultar tagline en pantallas pequeñas para ahorrar espacio */
+        display: none;
       }
 
       nav ul {
@@ -346,7 +348,7 @@
     </nav>
   </header>
 
-  <!-- BANNER TIPO TELEPROMPTER EN MEMORIA -->
+  <!-- BANNER TIPO TELEPROMPTER EN MEMORIA (OPTIMIZADO) -->
   <div class="memorial-banner" title="Pasa el cursor para pausar la cinta">
     <div class="memorial-track">
       <!-- BUCLE 1 -->
