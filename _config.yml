@@ -14,7 +14,7 @@ disqus: ''
 baseurl: ''
 
 # Permalinks
-permalink: /:title
+permalink: /:title/
 
 # Gems and plugins
 plugins: [jekyll-paginate]
